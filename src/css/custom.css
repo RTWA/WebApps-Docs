@@ -1,0 +1,62 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #4f46e5;
+  --ifm-color-primary-dark: #362ce1;
+  --ifm-color-primary-darker: #2a1fdf;
+  --ifm-color-primary-darkest: #231ab8;
+  --ifm-color-primary-light: #6860e9;
+  --ifm-color-primary-lighter: #746deb;
+  --ifm-color-primary-lightest: #9a95f0;
+  --ifm-code-font-size: 95%;
+}
+
+h1 {
+  font-size: var(--ifm-h1-font-size) !important;
+  font-weight: var(--ifm-heading-font-weight) !important;
+}
+
+h2 {
+  font-size: var(--ifm-h2-font-size) !important;
+  font-weight: var(--ifm-heading-font-weight) !important;
+}
+
+h3 {
+  font-size: var(--ifm-h3-font-size) !important;
+  font-weight: var(--ifm-heading-font-weight) !important;
+}
+
+h4 {
+  font-size: var(--ifm-h4-font-size) !important;
+  font-weight: var(--ifm-heading-font-weight) !important;
+}
+
+h5 {
+  font-size: var(--ifm-h5-font-size) !important;
+  font-weight: var(--ifm-heading-font-weight) !important;
+}
+
+h6 {
+  font-size: var(--ifm-h6-font-size) !important;
+  font-weight: var(--ifm-heading-font-weight) !important;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+article header h1 {
+  font-size: 2.5rem !important;
+}
+.hero .hero__title {
+  font-size: 2.5rem;
+}

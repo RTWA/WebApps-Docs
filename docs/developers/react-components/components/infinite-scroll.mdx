@@ -1,0 +1,23 @@
+---
+title: Infinite Scroll
+---
+import { WebAppsDocs } from './WebAppsDocs';
+import WebAppsComponent from './WebAppsComponent';
+
+<WebAppsDocs>
+    <WebAppsComponent>
+        <p className="text-gray-900 dark:text-gray-200 mb-0 text-center">No preview is provided.</p>
+    </WebAppsComponent>
+</WebAppsDocs>
+
+A `<InifiniteScroll />` is a loading wrapper for list of items that will perform a `loadMore` action when the bottom of the list is reached.
+
+## Component Properties
+
+### `loadMore`
+**Type:** function<br />
+The action to perform when the bottom of the list is reached
+
+### `hasMore`
+**Type:** boolean<br />
+True if there are more items to load, false if not. `loadMore` function will not be called if `hasMore` is false.

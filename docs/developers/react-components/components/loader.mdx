@@ -1,0 +1,39 @@
+---
+title: Loader
+---
+import { WebAppsDocs, WebAppsDocsContext } from './WebAppsDocs';
+import WebAppsComponent from './WebAppsComponent';
+import { Loader } from 'webapps-react';
+
+<WebAppsDocs>
+    <WebAppsComponent>
+        <WebAppsDocsContext.Consumer> 
+            { 
+                ctx => (
+                    <>
+                        <div className={`w-full flex flex-row justify-center text-${ctx.UI.theme}-600 dark:text-${ctx.UI.theme}-500`}>
+                            <Loader className="mx-auto" />
+                            <Loader className="mx-auto h-24 w-24" style="circle" />
+                        </div>
+                    </>
+                )
+            }
+        </WebAppsDocsContext.Consumer>
+    </WebAppsComponent>
+</WebAppsDocs>
+
+A `<Loader />` comes in two styles, the default is on the left of the preview, with `'circle'` being on the right.
+
+## Component Properties
+
+### `style`
+**Type:** string - one of `''` or `'circle'`<br />
+**Default:** `''`<br />
+The style of `<Loader />` to display.
+
+### `className` 
+**Type:** string, array or object<br />
+Classes to apply to the `<Loader />`
+
+### Other
+All other supplied props will be applied directly to the `<Loader />`

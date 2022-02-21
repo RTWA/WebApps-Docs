@@ -1,0 +1,45 @@
+---
+title: Badge
+---
+import { WebAppsDocs, WebAppsDocsContext } from './WebAppsDocs';
+import WebAppsComponent from './WebAppsComponent';
+import { Badge } from 'webapps-react';
+
+<WebAppsDocs>
+    <WebAppsComponent>
+        <WebAppsDocsContext.Consumer> 
+            { 
+                ctx => (
+                    <div className="w-full flex flex-row justify-center px-12">
+                        <Badge color={`${ctx.UI.theme}-300 dark:bg-${ctx.UI.theme}-600`} className="capitalize mx-auto">A Standard Badge</Badge> 
+                        <Badge color={`${ctx.UI.theme}-300 dark:bg-${ctx.UI.theme}-600`} pill className="capitalize mx-auto">A Pill Badge</Badge> 
+                    </div>
+                )
+            }
+        </WebAppsDocsContext.Consumer>
+    </WebAppsComponent>
+</WebAppsDocs>
+
+
+The `<Badge />` comes in two variants, a Standard Badge and a Pill Badge.
+
+
+## Component Properties
+
+### `tag`
+**Type:** string<br />
+**Default:** 'span'<br />
+The HTML tag that the Badge will use.
+
+### `pill` 
+**Type:** boolean<br />
+If this is true the Pill Badge variant will be output.
+
+### `color` 
+**Type:** string<br />
+The color class that will be applied to the badge.<br />
+_**Note:** this string is currently applied directly in the class with `bg-` prepended to the value. You must supply the color shade value. E.G `red-300`._
+
+### `className` 
+**Type:** string, array or object<br />
+Additonal classes to apply to the Badge element.

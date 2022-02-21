@@ -1,0 +1,38 @@
+---
+title: Drop Down Button
+---
+import { WebAppsDocs, WebAppsDocsContext } from './WebAppsDocs';
+import WebAppsComponent from './WebAppsComponent';
+import { Button, DropDownButton } from 'webapps-react';
+
+<WebAppsDocs>
+    <WebAppsComponent>
+        <WebAppsDocsContext.Consumer>
+            {
+                ctx => (
+                    <>
+                        <div className="w-full flex flex-row justify-center">
+                            <DropDownButton text="I drop down" color={ctx.UI.theme}>
+                                <Button style="link" color="gray">Dropdown Item 1</Button>
+                                <Button style="link" color="gray">Dropdown Item 2</Button>
+                                <Button style="link" color="gray">Dropdown Item 3</Button>
+                            </DropDownButton>
+                        </div>
+                    </>
+                )
+            }
+        </WebAppsDocsContext.Consumer>
+    </WebAppsComponent>
+</WebAppsDocs>
+
+A `<DropDownButton />` is a button that includes a dropdown menu.
+
+## Component Properties
+
+### `text`
+**Type:** string<br />
+The text to display on the button.
+
+
+### Other
+All other supplied props will be applied directly to the `<DropDownButton />`. This Component uses a [`<Button />`](button) so `color`, `square`, `rounded`, `size` and `style` props are all valid.

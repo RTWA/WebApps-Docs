@@ -1,0 +1,40 @@
+---
+title: Icon
+---
+import { WebAppsDocs, WebAppsDocsContext } from './WebAppsDocs';
+import WebAppsComponent from './WebAppsComponent';
+import { Icon } from 'webapps-react';
+
+<WebAppsDocs>
+    <WebAppsComponent>
+        <WebAppsDocsContext.Consumer>
+            {
+                ctx => (
+                    <>
+                        <div className="w-full flex flex-row justify-center px-12">
+                            <div className="flex flex-col text-center mx-auto">
+                                <Icon icon='<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+                                            </svg>'
+                                    className={`text-${ctx.UI.theme}-600 dark:text-${ctx.UI.theme}-500 h-10 w-10 mx-auto`} />
+                            </div>
+                        </div>
+                    </>
+                )
+            }
+        </WebAppsDocsContext.Consumer>
+    </WebAppsComponent>
+</WebAppsDocs>
+
+A `<Icon />` is a button that includes a dropdown menu.
+
+## Component Properties
+
+### `icon`
+**Type:** string<br />
+If a SVG string is provided, the SVG icon will be displayed.
+
+
+### Other
+The icon is wrapped in a `<div />` element and any additional props will be applied to that.<br />
+Any additional classes will be applied to both the wrapping `<div />` **and** the `<svg />` element.

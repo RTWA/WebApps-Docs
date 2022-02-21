@@ -1,0 +1,49 @@
+---
+title: Link
+---
+import { WebAppsDocs, WebAppsDocsContext } from './WebAppsDocs';
+import WebAppsComponent from './WebAppsComponent';
+import { Link } from 'webapps-react';
+
+<WebAppsDocs>
+    <WebAppsComponent>
+        <WebAppsDocsContext.Consumer> 
+            { 
+                ctx => (
+                    <>
+                        <div className="w-full flex flex-row justify-center">
+                            <Link href="https://google.co.uk" target="_blank" className={`text-${ctx.UI.theme}-600 dark:text-${ctx.UI.theme}-500`}>A Link to Google</Link>
+                        </div>
+                    </>
+                )
+            }
+        </WebAppsDocsContext.Consumer>
+    </WebAppsComponent>
+</WebAppsDocs>
+
+A `<Link />` is an easy way of navigating.
+
+## Component Properties
+
+### `href` or `to`
+If an `href` prop is supplied, the returned element will use an `<a />` tag.<br />
+If a `to` prop is supplied, the returned element will be a `<NavLink />`.
+
+### `onClick` 
+**Type:** function<br />
+An action perform when the `<Link />` is clicked.
+
+### `className` 
+**Type:** string, array or object<br />
+Classes to apply to the `<Link />`
+
+### `active`
+**Type:** boolean<br />
+This currently has no effect.
+
+### `disabled`
+**Type:** boolean<br />
+This currently has no effect.
+
+### Other
+All other supplied props will be applied directly to the `<Link />`

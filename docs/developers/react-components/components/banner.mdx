@@ -1,0 +1,42 @@
+---
+title: Banner
+---
+import { WebAppsDocs, WebAppsDocsContext } from './WebAppsDocs';
+import WebAppsComponent from './WebAppsComponent';
+import { Banner } from 'webapps-react';
+
+<WebAppsDocs>
+    <WebAppsComponent>
+        <WebAppsDocsContext.Consumer> 
+            { 
+                ctx => (
+                    <div className="w-full flex flex-row justify-center">
+                        <Banner color={`${ctx.UI.theme}-300 dark:bg-${ctx.UI.theme}-600`} className="w-full">This is a basic banner message</Banner>
+                    </div>
+                )
+            }
+        </WebAppsDocsContext.Consumer>
+    </WebAppsComponent>
+</WebAppsDocs>
+
+
+## Component Properties
+
+### `tag`
+**Type:** string<br />
+**Default:** 'div'<br />
+The HTML tag that the Banner will use.
+
+### `color` 
+**Type:** string<br />
+The color class that will be applied to the banner.<br />
+_**Note:** this string is currently applied directly in the class with `bg-` prepended to the value. You must supply the color shade value. E.G `red-300`._
+
+### `darkColor` 
+**Type:** string<br />
+The dark color class that will be applied to the banner.<br />
+_**Note:** this string is currently applied directly in the class with `dark:bg-` prepended to the value. You must supply the color shade value. E.G `red-600`._
+
+### `className` 
+**Type:** string, array or object<br />
+Additonal classes to apply to the Banner element.
