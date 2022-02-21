@@ -17,7 +17,7 @@ Having downloaded the [latest release](https://github.com/RTWA/WebApps/releases/
 Rename the `.env.example` file to `.env` in the root of your installation directory (You may need to enable hidden files to see this).
 
 {% hint style="warning" %}
-### Security Warning
+#### Security Warning
 
 Ensure that any folder above the WebApps folder is not presented publicly on your Web Server (i.e. It is not within the www folder of your WAMP installation).
 {% endhint %}
@@ -33,7 +33,7 @@ Optionally configure your listen ports as required for your WampServer.
 Click on the button `Start the creation of the VirtualHost (May take a while...)` and follow the on-screen prompts to restart your DNS when required.
 
 {% hint style="danger" %}
-### Danger
+#### Danger
 
 You should mark the `.env` file as Read-Only after you have installed WebApps through your web browser.
 {% endhint %}

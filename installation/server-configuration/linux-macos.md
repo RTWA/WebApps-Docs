@@ -9,7 +9,7 @@ Having downloaded the [latest release](https://github.com/RTWA/WebApps/releases/
 Rename the `.env.example` file to `.env` in the root of your installation directory (You may need to enable hidden files to see this).
 
 {% hint style="warning" %}
-### Security Warning
+#### Security Warning
 
 Ensure that any folder above the WebApps folder is not presented publicly on your Web Server.
 {% endhint %}

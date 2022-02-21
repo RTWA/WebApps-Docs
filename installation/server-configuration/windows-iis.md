@@ -11,7 +11,7 @@ Having downloaded the [latest release](https://github.com/RTWA/WebApps/releases/
 Rename the `.env.example` file to `.env` in the root of your installation directory (You may need to enable hidden files to see this).
 
 {% hint style="warning" %}
-### Security Warning
+#### Security Warning
 
 Ensure that any folder above the WebApps folder is not presented publicly on your Web Server (i.e. It is not within the wwwroot folder if you have the Default Site still running).
 {% endhint %}
@@ -92,7 +92,7 @@ IIS does not enable the DELETE or PUT verbs by default. WebApps uses the verbs w
 6. Click OK and wait for the permissions to apply, then click OK on the properties window
 
 {% hint style="danger" %}
-### Danger
+#### Danger
 
 You should reset the permissions to the `.env` file **and** mark the file as Read-Only after you have installed WebApps through your web browser.
 {% endhint %}

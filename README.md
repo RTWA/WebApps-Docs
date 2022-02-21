@@ -11,13 +11,13 @@ In order to get started with WebApps, make sure you have downloaded the [latest 
 WebApps is open source software which means all of our source code is availble for you to view, scrutinise, correct and submit! We are open to Pull Requests for our software or our documentation.
 
 {% hint style="info" %}
-### This is web-based software
+#### This is web-based software
 
 There are no installation or executable files (aka no .EXE or .MSI files), it must be run on a Web Server accessed through a web browser. It can run on a Linux distribution, macOS or Windows, however you are expected to have a decent working knowledge of setting up a web server on a LAMP (or equivalent IIS) stack.
 {% endhint %}
 
 {% hint style="warning" %}
-### File Structure
+#### File Structure
 
 WebApps is built using Laravel, it follows a standard Laravel MVC file structure. Within the WebApps installation directory, you'll see a `public` folder. This should be set as your website root.
 {% endhint %}
@@ -29,7 +29,7 @@ WebApps has been built with security in mind. Laravel utilises bcrypt to handle 
 We highly recommend the use of SSL for running WebApps.
 
 {% hint style="danger" %}
-### IMPORTANT
+#### IMPORTANT
 
 Never leave WebApps running in debug mode. Debug mode can be enormously useful if you are developing your own Plugins or Apps, or if you are contributing to our code base. However, you should always disable debug mode on a live website once you've resolved your issue.
 {% endhint %}
