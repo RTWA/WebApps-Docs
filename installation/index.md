@@ -1,4 +1,3 @@
-
 WebApps uses a web based installation wizard. Open your web browser at your WebApps URL (`webapps.local` if you're following along).
 
 Complete all steps of the installation wizard, you will be presented with the WebApps login screen once complete.
