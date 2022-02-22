@@ -1,27 +1,51 @@
 # Table of contents
 
-* [What is WebApps?](README.md)
-* [System Requirements](system-requirements.md)
+* [Introduction](README.md)
+* [Directory Structure](directory-structure.md)
+* [Developer Commands](developer-commands.md)
+* [Sample Data](sample-data.md)
 
-## Installation
+## React Components
 
-* [Server Configuration](installation/server-configuration/README.md)
-  * [Linux/macOS](installation/server-configuration/linux-macos.md)
-  * [Windows/IIS](installation/server-configuration/windows-iis.md)
-  * [Windows/WAMP](installation/server-configuration/windows-wamp.md)
-  * [Windows/XAMPP](installation/server-configuration/windows-xampp.md)
-* [Installation](installation/installation.md)
-* [Updating](installation/updating.md)
+* [Introduction](react-components/index.md)
+* [Auth Context](react-components/auth-context.md)
+* [WebApps Context](react-components/webapps-context.md)
+* [Components](react-components/components/README.md)
+  * [Badge](react-components/components/badge.md)
+  * [Banner](react-components/components/banner.md)
+  * [Button](react-components/components/button.md)
+  * [Confirm Delete Button](react-components/components/confirm-delete-button.md)
+  * [Confirm Delete Modal](react-components/components/confirm-delete-modal.md)
+  * [Drop Down Button](react-components/components/dropdown-button.md)
+  * [Icon](react-components/components/icon.md)
+  * [Infinite Scroll](react-components/components/infinite-scroll.md)
+  * [Input](react-components/components/input.md)
+  * [Link](react-components/components/link.md)
+  * [Loader](react-components/components/loader.md)
+  * [Switch](react-components/components/switch.md)
+  * [Icon](react-components/components/toast-notifications.md)
+  * [Undocumented Components](react-components/components/undocumented.md)
 
-## Configuration
+## Plugin Development
 
-* [Application Settings](configuration/application-settings.md)
-* [Email Settings](configuration/email-settings.md)
-* [Authentication Options](configuration/authentication-options.md)
-* [Permissions](configuration/permissions.md)
-* [Users and Groups](configuration/users-groups.md)
-* [Apps & Plugins](configuration/apps-plugins.md)
-* [Microsoft Azure Integration](configuration/microsoft-azure-integration/README.md)
-  * [Setup](configuration/microsoft-azure-integration/setup.md)
-  * [Configuration](configuration/microsoft-azure-integration/configuration.md)
-* [Config Editor](configuration/config-editor.md)
+* [Introduction](plugin-development/index.md)
+* [The Manifest File](plugin-development/manifest-file.md)
+* [The Class File](plugin-development/class-file.md)
+* [Including CSS](plugin-development/css-include.md)
+* [Inlcuding HTML](plugin-development/html-include.md)
+* [Including Scripts](plugin-development/scripts-include.md)
+* [Available Fields](plugin-development/available-fields.md)
+
+## App Development
+
+* [Introduction](app-development/index.md)
+* [The Manifest File](app-development/manifest-file.md)
+* [Service Provider](app-development/service-provider.md)
+* [Controllers](app-development/controllers/README.md)
+  * [App Manager Controller](app-development/controllers/app-manager-controller.md)
+  * [Master Controller](app-development/controllers/master-controller.md)
+  * [Other Controllers](app-development/controllers/other-controllers.md)
+* [Models](app-development/models.md)
+* [Routes](app-development/routes.md)
+* [Extending](app-development/extending.md)
+* [Submitting An App](app-development/submit.md)
