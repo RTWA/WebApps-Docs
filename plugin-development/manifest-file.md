@@ -1,4 +1,6 @@
-The manifest file is how WebApps knows what your Plugin is and how to present it.<br />
+# The Manifest File
+
+The manifest file is how WebApps knows what your Plugin is and how to present it.\
 The manifest is saved in a file called `plugin.json` in the root of your Plugin's directory.
 
 ## Manifest Keys
@@ -6,25 +8,31 @@ The manifest is saved in a file called `plugin.json` in the root of your Plugin'
 The manifest is a JSON object containing the following keys.
 
 ### `"name"`
+
 The name of your Plugin. This string can contain alphanumeric characters including spaces.
 
 ### `"slug"`
+
 This is the name of your Plugin in slug form (i.e contains no spaces or special characters). It should also be the directory that your Plugin is stored in.
 
 ### `"icon"`
-The icon of your Plugin. This should contain an SVG string.<br />
+
+The icon of your Plugin. This should contain an SVG string.\
 _**Note:** any classes applied to the SVG will be ignored._
 
 ### `"version"`
+
 The current version of your Plugin.
 
 ### `"author"`
+
 The author (you!) of your Plugin. This can only be a string at this time.
 
-
 ## Example File
-Below is the default [Sample Plugin](#) manifest file for v1.0.0 of the Plugin.
-```json title=plugin.json
+
+Below is the default [Sample Plugin](manifest-file.md) manifest file for v1.0.0 of the Plugin.
+
+```json
 {
     "name": "Sample",
     "slug": "Sample",

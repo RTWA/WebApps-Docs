@@ -1,4 +1,6 @@
-The manifest file is how WebApps knows what your App is and how to present it.<br />
+# The Manifest File
+
+The manifest file is how WebApps knows what your App is and how to present it.\
 The manifest is saved in a file called `manifest.json` in the root of your App's directory.
 
 ## Manifest Keys
@@ -6,91 +8,117 @@ The manifest is saved in a file called `manifest.json` in the root of your App's
 The manifest is a JSON object containing the following keys.
 
 ### `"name"`
+
 The name of your App. This string can contain alphanumeric characters including spaces.
 
 ### `"slug"`
+
 This is the name of your App in slug form (i.e contains no spaces or special characters). It should also be the directory that your App is stored in.
 
 ### `"description"`
+
 A short description of your App that will be displayed on the Apps List.
 
 ### `"icon"`
-The icon of your App. This should contain an SVG string.<br />
+
+The icon of your App. This should contain an SVG string.\
 _**Note:** any classes applied to the SVG will be ignored._
 
 ### `"icon_color"`
+
 The foreground color to display for your icon. Supported formats are the same as css `color` tag.
 
 ### `"background_color"`
+
 The background color to display for your icon. Supported formats are the same as css `background-color` tag.
 
 ### `"version"`
+
 The current version of your App.
 
 ### `"author"`
+
 The author (you!) of your App. This can only be a string at this time.
 
 ### `"menu"`
+
 An array of menu objects to display. Each menu object should have the following properties:
 
-**action**<br />
-The route to navigate to: `https://webapps.local/apps/MyNewApp/{action}`.<br />
-_**Note:** you should **not** provide the preceeding slash `/`._
+#### **action**
 
-**text**<br />
+The route to navigate to: `https://webapps.local/apps/MyNewApp/{action}`.\
+_**Note:** you should **not** provide the preceding slash `/`._
+
+#### **text**
+
 The text to display on the menu.
 
-**permission**<br />
+#### **permission**
+
 The permission required by the user for this item to display.
 
 ### `"routes"`
+
 An array of route objects available. Each route object should have the following properties:
 
-**path**<br />
-The route path to provide: `https://webapps.local/apps/MyNewApp{path}`.<br />
-_**Note:** you should provide the preceeding slash `/`._
+#### **path**
 
-**name**<br />
+The route path to provide: `https://webapps.local/apps/MyNewApp{path}`.\
+_**Note:** you should provide the preceding slash `/`._
+
+#### **name**
+
 The name of the route. This will probably match the text of the corresponding menu, but that isn't required.
 
-**exact**<br />
+#### **exact**
+
 Boolean value passed to React Router. Likelyhood is this should be `true`.
 
-**component**<br />
+#### **component**
+
 The App Component to display at this route.
 
-**permission**<br />
+#### **permission**
+
 The permission required by the user for this route to be available.
 
-
 ### `"permissions"`
+
 An array of permission objects to install for the App. Each permission object should have the following properties:
 
-**name**<br />
+#### **name**
+
 The key name of the permission. This should always start with `app.` followed by your App's slug (e.g. `MyNewApp.`) then the permission.
 
-**title**<br />
+#### **title**
+
 The friendly name of the permission.
 
-**guard**<br />
+#### **guard**
+
 This currently should always be `web`.
 
-**admin**<br />
-Boolean. Should the `Administrators` Group be granted this permission by default. Likelyhood is this should be `true`.
+#### **admin**
+
+Boolean. Should the `Administrators` Group be granted this permission by default. Likelihood is this should be `true`.
 
 ### `"settings"`
+
 An array of key/value Settings objects to install for the App.
 
-**key**<br />
+#### **key**
+
 The key for the setting. This should always start with `app.` followed by App's slug (e.g. `MyNewApp.`) then the setting.
 
-**value**<br />
+#### **value**
+
 The default value for the setting.
 
-
 ## Example File
-Below is the default [Demo App](#) manifest file for v1.0.0 of the App.
-```json title=manifest.json
+
+Below is the default [Demo App](https://github.com/RTWA/App-DemoApp) manifest file for v1.0.0 of the App.
+
+```json
 {
     "name": "Demo App",
     "slug": "DemoApp",

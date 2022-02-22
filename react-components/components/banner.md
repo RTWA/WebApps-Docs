@@ -1,23 +1,28 @@
-https://codesandbox.io/embed/webapps-docs-banner-lhxk5u?fontsize=14&hidenavigation=1&module=%2Fsrc%2FDemo.js&theme=dark&view=preview
+# Banner
 
+{% embed url="https://codesandbox.io/embed/webapps-docs-banner-lhxk5u?fontsize=14&hidenavigation=1&module=%2Fsrc%2FDemo.js&theme=dark&view=preview" %}
 
 ## Component Properties
 
 ### `tag`
-**Type:** string<br />
-**Default:** 'div'<br />
+
+**Type:** string\
+**Default:** 'div'\
 The HTML tag that the Banner will use.
 
-### `color` 
-**Type:** string<br />
-The color class that will be applied to the banner.<br />
+### `color`
+
+**Type:** string\
+The color class that will be applied to the banner.\
 _**Note:** this string is currently applied directly in the class with `bg-` prepended to the value. You must supply the color shade value. E.G `red-300`._
 
-### `darkColor` 
-**Type:** string<br />
-The dark color class that will be applied to the banner.<br />
+### `darkColor`
+
+**Type:** string\
+The dark color class that will be applied to the banner.\
 _**Note:** this string is currently applied directly in the class with `dark:bg-` prepended to the value. You must supply the color shade value. E.G `red-600`._
 
-### `className` 
-**Type:** string, array or object<br />
+### `className`
+
+**Type:** string, array or object\
 Additonal classes to apply to the Banner element.

@@ -23,7 +23,7 @@
   * [Link](react-components/components/link.md)
   * [Loader](react-components/components/loader.md)
   * [Switch](react-components/components/switch.md)
-  * [Icon](react-components/components/toast-notifications.md)
+  * [Toasts - Wrong Link](react-components/components/toasts-wrong-link.md)
   * [Undocumented Components](react-components/components/undocumented.md)
 
 ## Plugin Development

@@ -1,15 +1,19 @@
-You can extend your App with most Laravel package options, provided their containing directories are added to your App's [Service Provider](service-provider)'s Boot function's `$folders` variable.
-:::note
-TODO: THIS NEEDS ADDING SOMEHOW TO THE PS1 SCRIPT TOO!
-:::
+# Extending
 
-## Commands
-You can create [Laravel Commands](https://laravel.com/docs/8.x/packages#commands) by creating a Commands directory and create your command within it.<br />
+You can extend your App with most Laravel package options, provided their containing directories are added to your App's [Service Provider](service-provider.md#the-boot-function)'s Boot function's `$folders` variable.&#x20;
+
+{% hint style="warning" %}
+TODO: THIS NEEDS ADDING SOMEHOW TO THE PS1 SCRIPT TOO!
+{% endhint %}
+
+### Commands
+
+You can create [Laravel Commands](https://laravel.com/docs/8.x/packages#commands) by creating a Commands directory and create your command within it.\
 Your Command's signature must start with your App's slug, folowed by a colon `:`.
 
 Below is a full Command example from the `StaffDirectory` App.
 
-```php title=Commands/StaffDirectoryDeleteTrash.php
+```php
 <?php
 
 namespace WebApps\Apps\StaffDirectory\Commands;
@@ -55,13 +59,14 @@ class StaffDirectoryDeleteTrash extends Command
         return 0;
     }
 }
-
 ```
 
-## Schedule Commands
+### Schedule Commands
+
 In order to schedule Commands you need to add data to the `apps_scheduler` database table. This could be done with the `install()` `AppManagerController` function of your App.
 
 First, you must always check the `apps_scheduler` table exists and abort with a 500 status code if it does not.
+
 ```php
 if (!Illuminate\Support\Facades\Schema::hasTable('apps_scheduler')) {
     abort(500, "Apps scheduler table does not exist");
@@ -76,10 +81,10 @@ The `apps_scheduler` table has the following 5 fields:
 * `last_run` (DateTime) - when the command was last run. When inserting, you should provide a date/time in the past to trigger the schedule.
 * `schedule` (string) - how often the command should run. This should be interpretable by [PHPs `strtotime()` function](https://www.php.net/manual/en/function.strtotime.php).
 
-Before inserting your command, you should check if it exists already.<br />
+Before inserting your command, you should check if it exists already.\
 Below is an example from the `StaffDirectory` App.
 
-```php title=Controllers/AppManagerController.php
+```php
 if (!Illuminate\Support\Facades\DB::table('apps_scheduler')->where('command', '=', 'StaffDirectory:delete-trash')->first()) {
     Illuminate\Support\Facades\DB::insert([
         'app' => 'StaffDirectory',
@@ -94,7 +99,7 @@ You should remove the record whenever the `uninstall()` `AppManagerController` f
 
 Below is an example from the `StaffDirectory` App, having already checked if the `apps_scheduler` table exists.
 
-```php title=Controllers/AppManagerController.php
+```php
 if (Illuminate\Support\Facades\DB::table('apps_scheduler')->where('command', '=', 'StaffDirectory:delete-trash')->first()) {
     Illuminate\Support\Facades\DB::table('apps_scheduler')->where('command', '=', 'StaffDirectory:delete-trash')->delete()
 }
