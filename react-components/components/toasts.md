@@ -1,4 +1,6 @@
-https://codesandbox.io/embed/webapps-docs-toasts-o41bpj?fontsize=14&hidenavigation=1&module=%2Fsrc%2FDemo.js&theme=dark&view=preview
+# Toast Notifications
+
+{% embed url="https://codesandbox.io/embed/webapps-docs-toasts-o41bpj?fontsize=14&hidenavigation=1&module=%2Fsrc%2FDemo.js&theme=dark&view=preview" %}
 
 ## Component Requirements
 You must be using the [`<WebApps />` context](/developers/react-components/webapps-context) in order to use Toasts.
