@@ -23,6 +23,7 @@
   * [Input](react-components/components/input.md)
   * [Link](react-components/components/link.md)
   * [Loader](react-components/components/loader.md)
+  * [Select](react-components/components/select.md)
   * [Switch](react-components/components/switch.md)
   * [Toast Notifications](react-components/components/toasts.md)
   * [Undocumented Components](react-components/components/undocumented.md)
