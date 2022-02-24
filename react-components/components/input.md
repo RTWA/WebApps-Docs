@@ -25,6 +25,11 @@ The name attribute for the `<input />` element.
 **Default:** ''\
 The text to display in the `<label />` element.
 
+### `action`
+
+**Type:** object\
+Provide an `action` to display on the right-hand side of the `<input />` field, when state is `''`.
+
 ### `helpText`
 
 **Type:** string or object\
