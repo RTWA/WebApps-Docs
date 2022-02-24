@@ -15,7 +15,7 @@ The style of `<Loader />` to display.
 ### `color`
 
 **Type:** string\
-**Default:** Theme Colour\
+**Default:** 'gray'\
 The colour of the `<Loader />`.
 
 ### `height`
