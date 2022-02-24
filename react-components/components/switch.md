@@ -67,4 +67,4 @@ The function to perform when the `<input[type"checkbox"] />` element is changed.
 
 **Type:** string, array or object\
 **Default:** 'w-full'\
-Additional classes to apply to the wrapping `<div />` element.
+Classes to apply to the wrapping `<div />` element.
