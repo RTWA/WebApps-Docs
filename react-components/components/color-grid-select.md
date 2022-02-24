@@ -1,5 +1,7 @@
 # Color Grid Select
 
+{% embed url="https://codesandbox.io/embed/webapps-docs-colorgridselect-r4y95j?fontsize=14&hidenavigation=1&module=%2Fsrc%2FDemo.js&theme=dark&view=preview" %}
+
 A `<ColorGridSelect />` is a grid of coloured options for user to select from.
 
 ## Component Properties
