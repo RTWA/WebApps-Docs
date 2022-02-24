@@ -15,19 +15,19 @@ This will also be connected to the `for` attribute on the `<label />` element.
 
 ### `name`
 
-**Type:** string
+**Type:** string\
 **Default:** ''\
 The name attribute for the `<input[type"checkbox"] />` element.
 
 ### `label`
 
-**Type:** string
+**Type:** string\
 **Default:** ''\
 The text to display in the `<label />` element.
 
 ### `helpText`
 
-**Type:** string
+**Type:** string or object\
 **Default:** ''\
 The optional text to display below the `<input[type"checkbox"] />` element.\
 This will be hidden if an `error` property is provided and `state` is set to `error`.
