@@ -14,6 +14,7 @@
   * [Badge](react-components/components/badge.md)
   * [Banner](react-components/components/banner.md)
   * [Button](react-components/components/button.md)
+  * [Color Grid Select](react-components/components/color-grid-select.md)
   * [Confirm Delete Button](react-components/components/confirm-delete-button.md)
   * [Confirm Delete Modal](react-components/components/confirm-delete-modal.md)
   * [Drop Down Button](react-components/components/dropdown-button.md)
