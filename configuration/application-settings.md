@@ -4,7 +4,7 @@ The Application section is used to configure a few core options of WebApps. Sett
 
 ### Enable Error Reporting
 
-If you enable this option, your WebApps installation will report any crashes or issues to the WebApps team using a product called [Sentry](https://sentry.io). Please refer to the [Sentry Privacy Policy](https://sentry.io/privacy/) and the [Error Reporting](application-settings.md) section of the [WebApps Privacy Policy](application-settings.md).
+If you enable this option, your WebApps installation will report any crashes or issues to the WebApps team using a product called [Sentry](https://sentry.io). Please refer to the [Sentry Privacy Policy](https://sentry.io/privacy/) and the [WebApps Privacy Policy](../policies/app-privacy.md).
 
 ### Theme Colour
 
