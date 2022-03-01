@@ -25,3 +25,11 @@
   * [Setup](configuration/microsoft-azure-integration/setup.md)
   * [Configuration](configuration/microsoft-azure-integration/configuration.md)
 * [Config Editor](configuration/config-editor.md)
+
+
+## Policies
+
+* [Application Privacy Policy](policies/app-privacy.md)
+* [Application Cookie Policy](policies/app-cookies.md)
+* [Website Privacy Policy](policies/web-privacy.md)
+* [Website Cookie Policy](policies/web-cookies.md)
