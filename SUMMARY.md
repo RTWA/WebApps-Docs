@@ -16,6 +16,7 @@
 ## Configuration
 
 * [Application Settings](configuration/application-settings.md)
+* [Block Settings](configuration/block-settings.md)
 * [Email Settings](configuration/email-settings.md)
 * [Authentication Options](configuration/authentication-options.md)
 * [Permissions](configuration/permissions.md)
