@@ -18,6 +18,7 @@
   * [Confirm Delete Button](react-components/components/confirm-delete-button.md)
   * [Confirm Delete Modal](react-components/components/confirm-delete-modal.md)
   * [Drop Down Button](react-components/components/dropdown-button.md)
+  * [Grid Select](react-components/components/grid-select.md)
   * [Icon](react-components/components/icon.md)
   * [Infinite Scroll](react-components/components/infinite-scroll.md)
   * [Input](react-components/components/input.md)
