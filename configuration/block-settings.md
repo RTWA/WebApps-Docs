@@ -6,7 +6,7 @@ The Blocks section is used to configure behaviour of the small edit Block button
 
 ### Edit Button Location
 
-Use this option to set the location of the "hidden" button. Selecting the `hidden` option remove the button completely.
+Use this option to set the location of the "hidden" button. Selecting the `hidden` option will remove the button completely.
 
 ### Edit Button Icon
 
