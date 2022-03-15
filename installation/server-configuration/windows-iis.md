@@ -40,7 +40,7 @@ IIS does not enable the DELETE or PUT verbs by default. WebApps uses the verbs w
 * Open the option "Handler Mappings"
 * Open the option "PHP Mappings" (there may be more than one)
 * Click on "Request Restrictions" and select the "Verbs" tab
-* Add `DELETE,PUT` to the list of verbs so that it reads `GET,HEAD,POST,DELETE,PUT`
+* Add `DELETE,PUT,PATCH` to the list of verbs so that it reads `GET,HEAD,POST,DELETE,PUT,PATCH`
 * Save the changes
 * Repeat these steps for any other "PHP Mappings" options.
 
@@ -76,6 +76,21 @@ IIS does not enable the DELETE or PUT verbs by default. WebApps uses the verbs w
    * Write
 7. Tick the box labelled "Replace all child object permission entries with inheritable permission entries from this object"
 8. Click OK and wait for the permissions to apply, then click OK on the properties window
+
+#### Add permissions for the IIS user for the `public` folder:
+
+1. Open Windows Explorer
+2. Navigate to the root of your installation directory (`C:\inetpub\WebApps` if you're following along)
+3. Right-click on the `public` folder and select Properties
+4. Select the Security tab and click on the Advanced button
+5. Select or Add the `IUSR` local user and set the following allow permissions
+   * Modify
+   * Read & execute
+   * List folder contents
+   * Read
+   * Write
+6. Tick the box labelled "Replace all child object permission entries with inheritable permission entries from this object"
+7. Click OK and wait for the permissions to apply, then click OK on the properties window
 
 #### Add permissions for the IIS user for the `.env` file:
 
