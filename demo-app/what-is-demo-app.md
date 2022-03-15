@@ -16,7 +16,7 @@ Click on the Install button to download and install the App, then click on the A
 
 Occasionally we publish updates to our Apps. These will be displayed to users with Administrative Access rights on the Settings > Apps & Plugins page.
 
-If an update is available for Demo App, Update and Changelog buttons will appear. You can either update the app direct from this screen, or find out how the app has been changed by viewing the Changelog.
+If an update is available for Demo App, Update and Changelog buttons will appear. You can either update the App direct from this screen, or find out how the App has been changed by viewing the Changelog.
 
 ### How to uninstall Demo App
 
