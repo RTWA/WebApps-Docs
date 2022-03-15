@@ -20,7 +20,7 @@ Clicking the Install button will download the App and prepare it for Activation 
 
 ### Managing Plugins
 
-Plugins are used to make Blocks. All available Plugins are displayed in the grid. Use the switch to make a Plugin active or disabled. Only active Plugins will be available on the Create new Block page for all users.\
+Plugins are used to make Blocks. All available Plugins are displayed in the grid. Use the switch to make a Plugin active or disabled. Only active Plugins will be available on the Create new Block page for all users.
 
 
 {% hint style="info" %}
