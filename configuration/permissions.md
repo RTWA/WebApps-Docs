@@ -25,7 +25,7 @@ This permission controls whether a user can create new Blocks
 
 #### **View Other Users Blocks**
 
-This permission controls whether a user can view (and therefore edit) Blocks created by another user.\
+This permission controls whether a user can view (and therefore edit) Blocks created by another user.
 
 
 {% hint style="info" %}
