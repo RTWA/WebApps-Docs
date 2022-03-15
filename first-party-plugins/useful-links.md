@@ -1,6 +1,6 @@
 # Useful Links
 
-The Useful Links Plugin is...
+The Useful Links Plugin is a method display a list of links to either external or internal web pages.
 
 ### Repeater
 
