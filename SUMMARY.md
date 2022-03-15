@@ -23,3 +23,12 @@
 * [Manage Staff](staff-directory/manage-staff.md)
 * [Manage Views](staff-directory/manage-views.md)
 * [Reporting Issues](staff-directory/reporting-issues.md)
+
+## Timetable Week
+* [What is Timetable Week?](timetable-week/what-is-timetable-week.md)
+* [App Settings](timetable-week/app-settings/README.md)
+  * [App Settings](timetable-week/app-settings/app-settings.md)
+  * [App Permissions](timetable-week/app-settings/app-permissions.md)
+* [Set Week](timetable-week/set-week.md)
+* [How to get the value](timetable-week/how-to-get-the-value.md)
+* [Reporting Issues](timetable-week/reporting-issues.md)
